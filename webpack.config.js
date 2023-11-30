@@ -147,7 +147,7 @@ module.exports = (env, argv) => {
             new CopyWebpackPlugin({
             patterns: [
                 {from:'assets/images', to: 'images'},
-                {from: 'assets/fonts', to: 'fonts'}
+                {from: 'assets/fonts', to: 'fonts'},
                 {from: path.resolve(__dirname, 'index.html'), 
                 to: path.resolve(__dirname, 'public') },
                 {from: path.resolve(__dirname, 'detailed-page.html'), 
