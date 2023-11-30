@@ -7,7 +7,9 @@
         "start": "webpack --mode=development --progress --watch",
         "build": "webpack --mode=production"
     },
-    "author": "Demidenko Sergei",
+    "engines": {
+        "node": "^16"
+    },
     "license": "ISC",
     "browserslist": [
         "ie >= 10"
