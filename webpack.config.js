@@ -148,6 +148,12 @@ module.exports = (env, argv) => {
             patterns: [
                 {from:'assets/images', to: 'images'},
                 {from: 'assets/fonts', to: 'fonts'}
+                {from: path.resolve(__dirname, 'index.html'), 
+                to: path.resolve(__dirname, 'public') },
+                {from: path.resolve(__dirname, 'detailed-page.html'), 
+                to: path.resolve(__dirname, 'public') },
+                {from: path.resolve(__dirname, 'profile-page.html'), 
+                to: path.resolve(__dirname, 'public') },
             ],
         }),
         ]
