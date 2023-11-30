@@ -1,0 +1,104 @@
+.header {
+    height: rem($height-header-mobile);
+  
+    background-color: $white;
+  
+    box-shadow: $box-shadow;
+  
+    @media #{$screen-tablet} {
+        height: rem($height-header-desktop);
+    }
+  
+    &::after {
+        content: "";
+        width: 100%;
+        height: rem(1px);
+  
+        position: absolute;
+        bottom: rem(41px);
+  
+        background-color: $heather;
+  
+        @media #{$screen-tablet} {
+            display: none;
+        }
+    }
+    
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        @media #{$screen-tablet} {
+            display: grid;
+            grid-template-columns: 135px 1fr 130px;
+            column-gap: rem(50px);
+        }
+  
+        @media #{$screen-desktop} {
+            column-gap: rem(60px);
+        }
+        @media #{$screen-mobile-only} {
+            padding-top: rem(20px);
+            gap: rem(15px);
+        }
+    }
+  
+    &__column {
+        &--logo {
+            display: flex;
+            justify-content: center;
+            height: rem(30px);
+            width: rem(135px);
+            @media #{$screen-tablet} {
+                align-self: center;
+            }
+        }
+        
+        &--logo-profile-page {
+            @media #{$screen-tablet} {
+                align-self: start;
+                margin-top: rem(5px);
+            }
+        }
+  
+        &--search {
+            order: 1;
+  
+            width: 100%;
+  
+            @media #{$screen-tablet} {
+                order: 0;
+                align-self: center;
+                display: block;
+                max-width: rem(835px);
+                
+            }
+        }
+  
+  
+        &--devider {
+            display: none;
+
+            @media #{$screen-tablet} {
+                content: "";
+                
+                display: inline-block;
+                
+                position: relative;
+                align-self: center;
+                right: rem(15px);
+                
+    
+                width: rem(1px);
+                height: rem($height-header-desktop);
+    
+                background: $athens-gray;
+            }
+        }
+        &--profile {
+            align-self: center;
+            display: flex;
+        }
+    }
+  }

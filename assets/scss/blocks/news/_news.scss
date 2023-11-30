@@ -1,0 +1,31 @@
+.news {
+    background-color: $white;
+
+    border-radius: $border-radius-medium;
+
+    box-shadow: $box-shadow-double;
+
+    &__datetime {
+        display: block;
+
+        margin-bottom: rem(20px);
+
+        font-size: $font-size-small;
+        line-height: 160%;
+
+        color: $slate-gray;
+    }
+
+    &__block {
+        margin-bottom: rem(50px);
+    }
+
+    &__illustration {
+        height: rem(224px);
+        width: 100%;
+
+        @media #{$screen-tablet} {
+            height: rem(434px);
+        }
+    }
+}

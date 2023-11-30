@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: rem($width-container + 2 * $gap-container);
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: rem($gap-container);
+    padding-right: rem($gap-container);
+
+    &--grid {
+        @media #{$screen-desktop} {
+            display: grid;
+            grid-template-columns: rem(286px) 1fr;
+            grid-template-rows: auto 1fr;
+            column-gap: rem(32px);
+        }
+    }
+}

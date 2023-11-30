@@ -1,0 +1,8 @@
+.fields {
+    &__list {
+        margin: 0 0 rem(30px) 0;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: rem(20px);
+    }
+}

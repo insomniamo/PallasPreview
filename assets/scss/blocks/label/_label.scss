@@ -1,0 +1,29 @@
+.label {
+    position: relative;
+    
+    font-size: rem($font-size-small);
+    line-height: 140%;
+    letter-spacing: $letter-spacing-tiny;
+
+    color: $tundora;
+
+    cursor: pointer;
+
+    &__mark {
+        color: $red-orange;
+    }
+
+    &--disabled {
+        color: $heather;
+    }
+
+    &__error {
+        font-size: rem(10px);
+        line-height: 160%;
+        letter-spacing: rem(0.1px);
+
+        color: $carnation;
+
+        cursor: default;
+    }
+}

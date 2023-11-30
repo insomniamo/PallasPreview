@@ -1,0 +1,17 @@
+.search {
+    position: relative;
+
+    &__label {
+        @include visually-hidden;
+    }
+
+    &__button {
+        position: absolute;
+        top: 24%;
+        left: rem(10px);
+
+        @media #{$screen-mobile-only} {
+            left: 0;
+        }
+    }
+}

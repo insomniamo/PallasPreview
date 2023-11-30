@@ -1,0 +1,450 @@
+.card {
+    position: relative;
+
+    background-color: $white;
+
+    border-radius: rem($border-radius-medium);
+
+    box-shadow: $box-shadow-double;
+    height: rem(392px);
+    
+    z-index: 5;
+    @media #{$screen-mobile-only} {
+        height: auto;
+    }
+    
+    @media #{$screen-tablet} {
+        border-radius: rem($border-radius-large);
+        height: rem(352px);
+    }
+
+    &:hover {
+        box-shadow: $box-shadow-cards;
+
+        transition: $transition-duration $transition-finction;
+
+        cursor: pointer;
+    }
+
+    &--hovered:hover & {
+        
+        &__title,
+        &__description {
+            color: $curious-blue;
+
+            transition: $transition-duration $transition-finction;
+        }
+    }
+
+    &--big:hover & {
+        &__content--big {
+            background-color: rgba($bunker, 0.8);
+
+            transition: $transition-duration $transition-finction;
+        }
+    }
+
+    &--stretch {
+
+        @media #{$screen-tablet} {
+            display: flex;
+            justify-content: space-between;
+            max-height: rem(219px);
+        }
+    }
+
+    &--stretch & {
+        &__description {
+            @media #{$screen-tablet} {
+                margin-right: 0;
+
+                letter-spacing: $letter-spacing-small;
+            }
+
+            @media #{$screen-desktop} {
+                margin-right: rem(210px);
+            }
+        }
+
+        &__title {
+            @media #{$screen-tablet} {
+                margin-right: 0;
+            }
+
+            @media #{$screen-desktop} {
+                margin-right: rem(298px);
+            }
+        }
+    }
+
+    &__image {
+        position: relative;
+
+        width: 100%;
+
+        overflow: hidden;
+        max-height: 159px;
+
+        &::before {
+            $card-width: 335px;
+            $card-height: 159px;
+
+            display: flex;
+
+
+            padding-top: percentage($card-height / $card-width);
+
+            content: "";
+
+            @media #{$screen-tablet} {
+                $card-width: 354px;
+                $card-height: 159px;
+
+                padding-top: percentage($card-height / $card-width);
+            }
+
+            @media #{$screen-desktop} {
+                $card-width: 392px;
+                $card-height: 159px;
+
+                padding-top: percentage($card-height / $card-width);
+            }
+        }
+
+        &-pic {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: fill;
+
+            font-family: "object-fit: fill";
+
+            
+
+            border-top-left-radius: rem($border-radius-medium);
+            border-top-right-radius: rem($border-radius-medium);
+            
+
+            @media #{$screen-tablet} {
+                border-top-left-radius: rem($border-radius-large);
+                border-top-right-radius: rem($border-radius-large);
+            }
+        }
+
+        &-pic--big {
+            object-fit: fill;
+            border-bottom-left-radius: rem($border-radius-medium);
+            border-bottom-right-radius: rem($border-radius-medium);
+
+            @media #{$screen-tablet} {
+                border-bottom-left-radius: rem($border-radius-large);
+                border-bottom-right-radius: rem($border-radius-large);
+            }
+        }
+
+        &-pic--right {
+            @media #{$screen-tablet} {
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
+                border-top-right-radius: rem($border-radius-medium);
+                border-bottom-right-radius: rem($border-radius-medium);
+            }
+        }
+
+        &-pic--left {
+            @media #{$screen-tablet} {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                border-top-left-radius: rem($border-radius-medium);
+                border-bottom-left-radius: rem($border-radius-medium);
+            }
+        }
+    }
+
+    &__image--big {
+        max-height: 100%;
+        &::before {
+            $card-width: 335px;
+            $card-height: 352px;
+
+            display: block;
+
+            padding-top: percentage($card-height / $card-width);
+
+            content: "";
+
+            @media #{$screen-tablet} {
+                $card-width: 728px;
+                $card-height: 352px;
+
+                padding-top: percentage($card-height / $card-width);
+            }
+
+            @media #{$screen-desktop} {
+                $card-width: 816px;
+                $card-height: 352px;
+
+                padding-top: percentage($card-height / $card-width);
+            }
+        }
+    }
+
+    &__image--stretch-card {
+        max-height: 100%;
+        @media #{$screen-mobile-only} {
+            max-height: rem(205px);
+        }
+        &::before {
+            $card-width: 335px;
+            $card-height: 205px;
+
+
+            display: block;
+
+            padding-top: percentage($card-height / $card-width);
+
+            content: "";
+
+
+
+            @media #{$screen-tablet} {
+                $card-width: 728px;
+                $card-height: 219px;
+
+                padding-top: percentage($card-height / $card-width);
+            }
+
+            @media #{$screen-desktop} {
+                $card-width: 1240px;
+                $card-height: 219px;
+
+                padding-top: percentage($card-height / $card-width);
+            }
+        }
+
+        @media #{$screen-tablet} {
+            width: 33%;
+        }
+    }
+
+    &__image--stretch-card-right {
+        @media #{$screen-tablet} {
+            order: 2;
+        }
+    }
+
+    &__box {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @media #{$screen-tablet} {
+            min-height: rem(200px);
+        }
+
+        @media #{$screen-desktop} {
+            min-height: rem(194px);
+        }
+    }
+
+    &__content {
+        &--big{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+    
+            width: 100%;
+            height: 100%;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+    
+            color: $white;
+            background-color: rgba($bunker, 0.6);
+    
+            border-radius: rem($border-radius-medium);
+    
+            @media #{$screen-tablet} {
+                border-radius: rem($border-radius-large);
+            }
+        }
+    }
+
+    &__content--big & {
+        &__text-box {
+            @media #{$screen-desktop} {
+                min-height: rem(143px);
+            }
+        }
+    }
+
+    &__content--stretch {
+
+        @media #{$screen-tablet} {
+            width: 72%;
+            min-height: 219px;
+        }
+
+        @media #{$screen-desktop} {
+            min-height: 220px;
+        }
+    }
+    
+    &__theme-box {
+        display: none;
+        
+        font-size: rem($font-size-miniature);
+        font-weight: $font-weight-regular;
+        line-height: 150%;
+        color: $curious-blue;
+
+        @media #{$screen-tablet} {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            margin-bottom: rem(15px);
+        }
+        @media #{$screen-desktop} {
+            margin-bottom: rem(15px);
+        }
+    }
+    
+    &__maintheme{
+        margin-right: rem(10px);
+    }
+
+    &__secondary-theme {
+        position: relative;
+    
+        @media #{$screen-tablet} {
+            display: inline-block;
+    
+            &::after {
+                content: "";
+    
+                position: absolute;
+                top: rem(4px);
+                left: rem(-5px);
+
+                width: rem(1px);
+                height: rem(14px);
+
+                background-color: $heather;
+             }
+        }
+    }
+
+    &__link {
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text-box {
+        padding: rem(20px) rem(20px) rem(16px) rem(20px);
+
+        @media #{$screen-tablet} {
+            padding: rem(15px) rem(20px) 0 rem(20px);
+        }
+    }
+
+    &__title {
+        margin-bottom: rem(10px);
+
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+        @media #{$screen-tablet} {
+            margin-right: rem(85px);
+        }
+
+    }
+
+    &__main-link {
+        color: inherit;
+    }
+
+    &__description {
+        line-height: 150%;
+        color: $slate-gray;
+
+        -webkit-line-clamp: 3;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        @media #{$screen-mobile-only} {
+            -webkit-line-clamp: 5;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        @media #{$screen-tablet} {
+            margin-right: rem(87px);
+
+            font-size: rem($font-size-tiny);
+        }
+
+        @media #{$screen-desktop} {
+            margin-right: rem(127px);
+        }
+        &--hovered {
+            &:hover {
+                color: $curious-blue;
+        
+                transition: $transition-duration $transition-finction;
+            }
+        }
+    }
+
+    &__description {
+        &--big{
+            color: $white;
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        
+        &--stretch--card{
+            @media #{$screen-tablet} {
+                top: rem(10px);
+                right: rem(15px);
+            }
+        }
+        &--stretch-card-right{
+            @media #{$screen-tablet} {
+                top: rem(10px);
+                right: 33.5%;
+            }
+    
+            @media #{$screen-desktop} {
+                right: 33%;
+            }
+        }
+
+    }
+}

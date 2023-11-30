@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+
+    <body>
+        <header class="page__header header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__column header__column--logo">
+                        <div class="column__logo header__column--logo">
+                            <a href="index.html" class="logo__link">
+                                <img class="logo__pic pic" src="public/images/pallas-cat.png"alt="Логотип">
+                            </a>
+                        </div>
+                    </div>
+          
+                    <div class="header__column header__column--search">
+                        <form class="search" action="#" method="get">
+                            <label class="search__label" for="search">Поиск</label>
+                            <input class="search__input input input--search" type="search" id="search"
+                                placeholder="Найти...">
+                            <button class="search__button button button--icon button--iconed-gray" type="button">
+                                <svg class="button__icon button__iconed--gray icon icon--button-gray">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="header__column header__column header__column--profile header__column--devider">
+                        <div class="header__profile profile">
+                            <a class="profile__link" href="profile-page.html">
+                                <div class="profile__bar">
+                                    <span class="profile__name">Сергей</span>
+                                    <div class="profile__avatar">
+                                        <img class="profile__avatar-pic" src="public/images/pallas-avatar.png" alt="Аватар">
+                                        <svg class="profile__icon-pic icon">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-profile"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page__content content">
+            <div class="container">
+                <article class="page__info info-section">
+                    <div class="notifications">
+                        <div class="notifications__slider slider slider--notifications">
+                            <div class="slider__box" data-carousel="pagination">
+                                <div class="swiper-container" data-carousel-container>
+                                    <ul class="notifications__list swiper-wrapper">
+                                        <li class="notifications__item swiper-slide">
+                                            <article class="notification notification--slide mini-card">
+                                                <div class="mini-card__content-box">
+                                                    <div class="mini-card__title-box">
+                                                        <p class="mini-card__title" data-card-mini-title>Важное
+                                                            уведомление
+                                                        </p>
+                                                        <svg class="mini-card__icon icon">
+                                                            <use
+                                                                xlink:href="public/images/icons/sprite.svg#icon-exclamation-mark">
+                                                            </use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mini-card__description" data-card-mini-description>
+                                                        У нас вышла новость о Тимофее!
+                                                        
+                                                    </p>
+                                                </div>
+                                                <button class="mini-card__button button button--filled button--rounded"
+                                                    type="button">Подробнее</button>
+                                            </article>
+                                        </li>
+                                        <li class="notifications__item swiper-slide">
+                                            <article class="notification notification--slide mini-card">
+                                                <div class="mini-card__content-box">
+                                                    <div class="mini-card__title-box">
+                                                        <p class="mini-card__title" data-card-mini-title>Вопрос дня</p>
+                                                        <svg class="mini-card__icon icon">
+                                                            <use
+                                                                xlink:href="public/images/icons/sprite.svg#icon-question-mark">
+                                                            </use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mini-card__description" data-card-mini-description>
+                                                        Вы любите манулов?
+                                                    </p>
+                                                </div>
+                                                <div class="mini-card__buttons-box">
+                                                    <button class="mini-card__button button button--simple"
+                                                        type="button">Да</button>
+                                                    <button class="mini-card__button button button--filled button--rounded"
+                                                        type="button">Да</button>
+                                                </div>
+                                            </article>
+                                        </li>
+                                        <li class="notifications__item swiper-slide">
+                                            <article class="notification notification--slide mini-card">
+                                                <div class="mini-card__content-box">
+                                                    <div class="mini-card__title-box">
+                                                        <p class="mini-card__title" data-card-mini-title>Технические
+                                                            шоколадки
+                                                        </p>
+                                                        <svg class="mini-card__icon icon">
+                                                            <use xlink:href="public/images/icons/sprite.svg#icon-info">
+                                                            </use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mini-card__description" data-card-mini-description>
+                                                        Портал будет недоступен
+                                                        01.12.2023 с 11:00 до 13:00
+                                                    </p>
+                                                </div>
+                                                <button class="mini-card__button button button--filled button--rounded"
+                                                    type="button">Ясно-понятно</button>
+                                            </article>
+                                        </li>
+                                        <li class="notifications__item swiper-slide">
+                                            <article class="notification notification--slide mini-card">
+                                                <div class="mini-card__content-box">
+                                                    <div class="mini-card__title-box">
+                                                        <p class="mini-card__title" data-card-mini-title>Опрос недели
+                                                        </p>
+                                                        <svg class="mini-card__icon icon">
+                                                            <use
+                                                                xlink:href="public/images/icons/sprite.svg#icon-question-mark">
+                                                            </use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mini-card__description" data-card-mini-description>
+                                                        Какой Вы сегодня смешарик?
+                                                    </p>
+                                                </div>
+                                                <button class="mini-card__button button button--filled button--rounded"
+                                                    type="button">Пройти опрос</button>
+                                            </article>
+                                        </li>
+                                        <li class="notifications__item swiper-slide">
+                                            <article class="notification notification--slide mini-card">
+                                                <div class="mini-card__content-box">
+                                                    <div class="mini-card__title-box">
+                                                        <p class="mini-card__title" data-card-mini-title>Вопрос дня</p>
+                                                        <svg class="mini-card__icon icon">
+                                                            <use
+                                                                xlink:href="public/images/icons/sprite.svg#icon-question-mark">
+                                                            </use>
+                                                        </svg>
+                                                    </div>
+                                                    <p class="mini-card__description" data-card-mini-description>
+                                                        У вас все хорошо?
+                                                    </p>
+                                                </div>
+                                                <div class="mini-card__buttons-box">
+                                                    <button class="mini-card__button button button--simple"
+                                                        type="button">Нет</button>
+                                                    <button class="mini-card__button button button--filled button--rounded"
+                                                        type="button">Да</button>
+                                                </div>
+                                            </article>
+                                        </li>
+                                    </ul>
+    
+                                    <div class="slider__pagination swiper-pagination" data-carousel-pagination></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </article>
+
+                <h1 class="page__main-heading page__main-heading--main">Манул Тимофей</h1>
+
+                <section class="page__about about-section show-more" data-show>
+                    <h3 class="about-section__heading">Пушистый символ</h3>
+                    <p class="about-section__description">
+                        В экспозиции Московского зоопарка вновь появился манул. 
+                        Его зовут Тимофей. 
+                        Увидеть одного из самых редких и скрытных представителей семейства кошачьих можно в вольере на старой территории, неподалеку от жилища панд.
+                    </p>
+                    <p class="about-section__description show-more__hidden" data-show-content>
+                        Манул, или палласов кот (второе название он получил в честь немецкого ученого Петра Палласа, который впервые его описал), занесен в Международную Красную книгу в категории «вид, близкий к угрозе исчезновения». Он символ и талисман столичного зоосада уже более 30 лет. <br>
+  
+
+                        Палласов кот уже был представлен в экспозиции столичного зоосада, однако в начале текущего года зверь, к сожалению, умер от прогрессировавшей неизлечимой болезни.
+                        Основное поголовье манулов — до переезда Тимофея оно состояло из шести особей — проживает в Центре воспроизводства редких видов зоопарка под Волоколамском.
+                        Здесь зоологи обеспечили животным условия, близкие к естественным, поэтому манулы чувствуют себя в безопасности и регулярно приносят потомство.
+                    </p>
+                    <button class="about-section__button show-more__toggle button button--show-more" type="button"
+                        data-show-toggle>
+                        <span class="show-more__toggle-label" data-show-toggle-text>Показать еще</span>
+                        <span class="show-more__icon">
+                            <svg class="icon">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-arrow-up">
+                                </use>
+                            </svg>
+                        </span>
+                    </button>
+                </section>
+
+                <section class="page__articles articles-section">
+                    <div class="articles-section__tabs tabs tabs--underlined" data-tabs>
+                        <nav class="tabs__items">
+                            <ul class="tabs__list">
+                                <li class="tabs__item tabs__item--underlined tabs__item--active" data-tab="news">
+                                    Новости
+                                </li>
+                                <li class="tabs__item tabs__item--underlined" data-tab="facts">
+                                    Краткие факты
+                                </li>
+                            </ul>
+                        </nav>
+    
+                        <div class="tabs__body">
+                            <div class="tabs__block tabs__block--active" data-tab-section="news">
+                                <div class="cards">
+                                    <ul class="cards__list">
+                                        <li class="cards__item">
+                                            
+                                            <article class="card card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic"
+                                                                src="public/images/pallas1.jpg">
+                                                            </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text-box">
+                                                        <h3 class="card__title heading heading--card">
+                                                            Манул Тимофей встретил зиму в Московском зоопарке</h3>
+                                                        <p class="card__description">
+                                                            Символ Московского зоопарка – манул Тимофей – встретил зиму. Он вышел из своего теплого домика и внимательно изучил все сугробы, которые образовались в вольере.
+                                                            Выглядет Тимофей при этом несколько растерянным. Пользователи отметили, что в весе манул за осень серьезно прибавил
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <time class="info-box__datetime" datetime="2023-11-21">21.11.2023</time>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        12
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-comments">
+                                                                            </use>
+                                                                        </svg>
+                                                                        8
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        5
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button button button--simple button--icon button--iconed-with button--iconed-with-filled"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                        <li class="cards__item">
+                                            
+                                            <article class="card card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic"
+                                                                src="public/images/pallas2.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text-box">
+                                                        <h3 class="card__title heading heading--card">
+                                                            Пушистый символ: в Московском зоопарке вновь появился зверь-талисман
+                                                        </h3>
+            
+                                                        <p class="card__description">
+                                                            В экспозиции Московского зоопарка вновь появился манул. Его зовут Тимофей. Увидеть одного из самых редких и скрытных представителей семейства кошачьих можно в вольере на старой территории, неподалеку от жилища панд.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <time class="info-box__datetime" datetime="2020-08-03">03.08.2020</time>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        7
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-comments">
+                                                                            </use>
+                                                                        </svg>
+                                                                        4
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        13
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button button button--simple button--icon button--iconed-with button--iconed-with-filled"
+                                                    type="button">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star-filled"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                        <li class="cards__item cards__item--big">
+                                            
+                                            <article class="card card--big">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image card__image--big">
+                                                    <div class="card__box card__box--big">
+                                                        <picture>
+                                                            <img class="card__image-pic card__image-pic--big"
+                                                                src="public/images/pallas4.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content card__content--big">
+                                                    <div class="card__text-box">
+                                                        <h3 class="card__title heading heading--card">Спасены и не одиноки: в Московский зоопарк прибыли два котенка манула
+                                                        </h3>
+                                                        <p class="card__description card__description--big">
+                                                            Ослабленных и истощенных котят нашли в Бурятии. Они потеряли мать и не смогли бы выжить в естественной среде обитания. В Улан-Удэ выходили диких зверят, а затем начали искать им новый дом. Столичный зоопарк принял малышей у себя.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box info-box--big">
+                                                        <time class="info-box__datetime" datetime="2021-11-19">19.11.2021</time>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        17
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-comments">
+                                                                            </use>
+                                                                        </svg>
+                                                                        18
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        22
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button button--simple button--icon button--iconed-with button--iconed-with-white"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+            
+                                            </article>
+                                        </li>
+                                        <li class="cards__item">
+                                            
+                                            <article class="card card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic"
+                                                                src="public/images/pallas5.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text-box">
+                                                        <h3 class="card__title heading heading--card">Манул Тимоша вышел на вечернюю прогулку
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Манул Тимоша вышел на вечернюю прогулку
+                                                            Звезда Московского зоопарка манул Тимоша чем-то похож на сову. После зажировки он выглядит очень солидно!
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <time class="info-box__datetime" datetime="2020-02-04">04.02.2020</time>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        19
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-comments">
+                                                                            </use>
+                                                                        </svg>
+                                                                        14
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        12
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button button button--simple button--icon button--iconed-with button--iconed-with-filled"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                        <li class="cards__item">
+                                            
+                                            <article class="card card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic"
+                                                                src="public/images/pallas3.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content">
+                                                    <div class="card__text-box">
+                                                        <h3 class="card__title heading heading--card">Манул не обманул: как живет главный символ Московского зоопарка</h3>
+                                                        <p class="card__description">
+                                                            Для мастера маскировки Тимофей невероятно общителен
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <time class="info-box__datetime" datetime="2022-09-28">28.09.2022</time>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        15
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-comments">
+                                                                            </use>
+                                                                        </svg>
+                                                                        34
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        18
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button button button--simple button--icon button--iconed-with button--iconed-with-filled"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__block" data-tab-section ="facts">
+                                <div class="cards">
+                                    <ul class="cards__list cards__list--stretch">
+                                        <li class="cards__item cards__item--stretch">
+                                            
+                                            <article class="card card--stretch card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image card__image--stretch-card card__image--stretch-card-right">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic card__image-pic--right"
+                                                                src="public/images/pallas7.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content card__content--stretch">
+                                                    <div class="card__text-box">
+                                                        <div class="card__theme-box">
+                                                            <span class="card__maintheme">Биология</span>
+                                                            <span class="card__secondary-theme">Экология</span>
+                                                        </div>
+                                                        <h3 class="card__title heading heading--card">Среда обитания</h3>
+                                                        <p class="card__description">
+                                                            Манул обитает в безлесных, засушливых областях с резко континентальным климатом: в горах, степях и полупустынях. В горы манул поднимается в среднем до 4800 м, максимальная зарегистрированная высота обитания — более 5500 метров на Тибетском нагорье.
+                                                            В местах обитания манула температура зимой может достигать −50 °C, но так как манул плохо приспособлен к перемещению по рыхлому снегу, он селится там, где толщина снежного покрова не превышает 10 см, максимум — 15—20 см. 
+                                                            Для обитания манула также необходимо наличие кустарников и скальных участков, где животное может скрываться во время охоты и устраивать убежища, — на открытых участках манул не селится[5][6]. Типичный ландшафт, подходящий для манула, — склоны гор и возвышенностей либо края низин, пересечённые логами. Кроме того, распространённость манула напрямую зависит от кормовой базы: к типичным жертвам манула относятся грызуны и зайцеобразные, не имеющие зимней спячки, а наиболее многочислен манул там, где проживает много пищух или полёвок. 
+                                                            Таким образом, манул довольно стенотопен, то есть приспособлен только к определённым средам обитания, что и объясняет фрагментированность его ареала.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <div class="info-box__info">
+                                                            <time class="info-box__datetime" datetime="2023-11-30">30.11.2023</time>
+                                                            <span class="info-box__status">Не прочитано</span>
+                                                        </div>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        36
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        22
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button card__button--stretch-card-right button button--simple button--icon button--iconed-with"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                        <li class="cards__item cards__item--stretch">
+                                            
+                                            <article class="card card--stretch card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image card__image--stretch-card">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic card__image-pic--left"
+                                                                src="public/images/pallas8.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content card__content--stretch">
+                                                    <div class="card__text-box">
+                                                        <div class="card__theme-box">
+                                                            <span class="card__maintheme">Биология</span>
+                                                            <span class="card__secondary-theme">Экология</span>
+                                                        </div>
+                                                        <h3 class="card__title heading heading--card">Поведение</h3>
+                                                        <p class="card__description">
+                                                            Манул ведёт одиночный, в основном оседлый образ жизни. 
+                                                            Активен преимущественно в вечерних или утренних сумерках, а днём спит в укрытии, но в летний период может быть активен и в дневное время. Логово устраивает в расщелинах скал — в небольших пещерах или среди камней — и в норах других животных, например, сурков или барсуков. 
+                                                            В убежище манула может находиться подстилка из засохших листьев и стеблей, птичьих перьев и шкурок грызунов, также в убежищах можно обнаружить остатки добычи, которую кошки приносили котятам. 
+                                                            Убежище манул использует в течение всего года.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <div class="info-box__info">
+                                                            <time class="info-box__datetime" datetime="2023-11-30">30.11.2023</time>
+                                                            <span class="info-box__status">Не прочитано</span>
+                                                        </div>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        3
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        22
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button card__button--stretch--card button button--simple button--icon button--iconed-with"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                        <li class="cards__item cards__item--stretch">
+                                            
+                                            <article class="card card--stretch card--hovered">
+                                                <a class="card__link" href="detailed-page.html"></a>
+                                                <div class="card__image card__image--stretch-card card__image--stretch-card-right">
+                                                    <div class="card__box">
+                                                        <picture>
+                                                            <img class="card__image-pic card__image-pic--right"
+                                                                src="public/images/pallas9.jpg">
+                                                        </picture>
+                                                    </div>
+                                                </div>
+                                                <div class="card__content card__content--stretch">
+                                                    <div class="card__text-box">
+                                                        <div class="card__theme-box">
+                                                            <span class="card__maintheme">Биология</span>
+                                                            <span class="card__secondary-theme">Экология</span>
+                                                        </div>
+                                                        <h3 class="card__title heading heading--card">Охота и питание
+                                                        </h3>
+                                                        <p class="card__description">
+                                                            Кормится манул почти исключительно мелкими грызунами и пищухами, причём последние составляют более чем половину его рациона: пищухи заметно крупнее другой мелкой добычи, на которую манул охотится, поэтому они — наиболее предпочтительная жертва для манула по соотношению добычи и затрат энергии на охоту. 
+                                                            В рацион манула входят песчанки, полёвки, хомячки и белки. В более редких случаях, в зависимости от места, манулы ловят сусликов, зайцев, ежей и молодых сурков; могут ловить мелких птиц, например, жаворонков, кекликов и куропаток. 
+                                                            Типичная масса добычи составляет 50—300 грамм. В летний период манул может питаться насекомыми, такими как кузнечики. Кроме того, наблюдалось поедание манулами ягод и падали.
+                                                            Манул может охотиться разными способами: может незаметно подползать к жертве, скрываясь в растительности или среди камней, после чего набрасываться на жертву с достаточно близкого расстояния либо просто ловить её, а может устраивать засады или поджидать жертву у норы. Кроме того, из мелких нор манул способен доставать грызунов лапой.
+                                                        </p>
+                                                    </div>
+                                                    <div class="card__info-box info-box">
+                                                        <div class="info-box__info">
+                                                            <time class="info-box__datetime" datetime="2023-11-30">30.11.2023</time>
+                                                            <span class="info-box__status">Не прочитано</span>
+                                                        </div>
+                                                        <div class="info-box__stats">
+                                                            <ul class="info-box__stats-list">
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-like">
+                                                                            </use>
+                                                                        </svg>
+                                                                        18
+                                                                    </span>
+                                                                </li>
+                                                                <li class="info-box__stats-item">
+                                                                    <span class="info-box__icon-box">
+                                                                        <svg class="info-box__icon icon icon--info-box">
+                                                                            <use
+                                                                                xlink:href="public/images/icons/sprite.svg#icon-views">
+                                                                            </use>
+                                                                        </svg>
+                                                                        12
+                                                                    </span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button
+                                                    class="card__button card__button--stretch-card-right button button--simple button--icon button--iconed-with"
+                                                    type="button" data-tippy-content="Добавить в избранное">
+                                                    <svg class="button__icon icon">
+                                                        <use xlink:href="public/images/icons/sprite.svg#icon-star"></use>
+                                                    </svg>
+                                                </button>
+                                            </article>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="articles-section__button button button--filled button--huge button--filled-icon"
+                        type="button">
+                        <span>Смотреть еще</span>
+                        <svg class="button__icon button__icon--filled icon icon--filled-button">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </section>
+
+            </div>
+        </main>
+
+
+        <footer class="page__footer footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__column footer__column--social">
+                        <div class="footer__social social">
+                            <ul class="social__list">
+                                <li class="social__list-item">
+                                    <a class="social__icon" href="#">
+                                        <svg class="social__icon-pic icon ">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-youtube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__list-item">
+                                    <a class="social__icon" href="#">
+                                        <svg class="social__icon-pic icon ">
+                                            <use xlink:href="public/images/icons/sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__column footer__column--menu">
+                        <div class="footer__menu menu">
+                            <ul class="footer__menu-list menu-list">
+                                <li class="menu-list__item">
+                                    <a href="#">Правила</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#">Документы</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li class="menu-list__item">
+                                    <a href="#">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__column footer__column--logo">
+                        <div class="footer__logo logo">
+                            <a class="logo__link logo__link--footer" href="index.html">
+                                <svg class="logo__pic logo__pic--footer">
+                                    <use xlink:href="public/images/icons/sprite.svg#icon-pallas-logo"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/public/js/script.js" type="module"></script>
+    </body>
+
+</html>

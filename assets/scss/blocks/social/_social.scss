@@ -1,0 +1,27 @@
+.social {
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        list-style-type: none;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin-right: rem(23px);
+        }
+    }
+
+    &__icon {
+        display: block;
+
+        color: $heather;
+        width: rem(40px);
+        height: rem(40px);
+        &:hover,
+        &:focus,
+        &:active {
+            color: $slate-gray;
+        }
+    }
+}

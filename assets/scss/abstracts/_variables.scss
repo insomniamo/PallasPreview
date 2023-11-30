@@ -1,0 +1,159 @@
+/**
+* Colors
+*
+* Название переменной конкретного цвета генерируется через сервис: http://chir.ag/projects/name-that-color/.
+* Значение цвета всегда указывается в HEX-формате в нижнем регистре (кроме исключительных случаев).
+*/
+// Пример указания цветов
+$outer-space: #202f2f;
+$bunker: #121920;
+$white: #FFFFFF;
+$slate-gray: #768298;
+$heather: #BBC4D6;
+$wild-blue-yonder: #6680AE;
+$athens-gray: #EBEBF1;
+$curious-blue: #34AADD;
+$tapestry: #A7507B;
+$cerise-red: #DC2C53;
+$carnation: #F95A59;
+$red-orange: #FF3332;
+$alabaster: #FAFAFA;
+$black: #000000;
+$silver-chalice: #A4A4A4;
+$tundora: #4b4b4b;
+$golden-grass: #dc971f;
+$tiber: #0a2b37;
+
+
+//font color
+$font-color-main: $bunker;
+$font-color-secondary: $slate-gray;
+$font-color-light: $white;
+
+//background color
+$main-background: $alabaster;
+
+$logo-footer: $heather;
+$logo-foter-hover: $slate-gray;
+
+//button color
+$button-normal: $curious-blue;
+$button-hover: $wild-blue-yonder;
+$button-active: rgba($wild-blue-yonder, .5);
+$button-disabled: $athens-gray;
+
+
+
+
+/**
+* Fonts
+*/
+$font-size-base: 16px;
+
+$font-path: "/public/fonts";
+
+$font-family-custom: "Roboto";
+$font-family-default: sans-serif;
+
+$font-family: $font-family-custom;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+
+
+//text sizes
+$font-size-tiny: 14px;
+$line-height-tiny: 24px;
+
+$font-size-small: 16px;
+$line-height-small: 26px;
+
+$font-size-miniature: 12px;
+$line-height-miniature: 19px;
+
+
+//heading sizes
+$title-size-big: 30px;
+$title-height-big: 39px;
+$title-size-medium: 24px;
+$title-height-medium: 30px;
+$title-size-small: 20px;
+$title-height-small: 24px;
+
+$title-size-big-desktop: 36px;
+$title-height-big-desktop: 47px;
+$title-size-medium-desktop: 30px;
+$title-height-medium-desktop: 38px;
+$title-size-small-desktop: 24px;
+$title-height-small-desktop: 29px;
+
+//letter-spacing
+$letter-spacing-tiny: 0.12px;
+$letter-spacing-small: 0.14px;
+$letter-spacing-medium: 0.2px;
+
+/**
+* Breakpoints
+*/
+// Пример указания медиазапросов, затем можно использовать ее как '@media #{$screen-medium} {...}'
+$screen-desktop: "(min-width: 1440px)";
+$screen-tablet: "(min-width: 768px)";
+$screen-mobile-only: "(max-width: 767px)";
+
+
+
+/**
+* Layout
+*/
+$width-container: 1240px;
+$gap-container: 20px;
+
+
+/**
+* Sizes
+*/
+$height-header-desktop: 80px;
+$height-header-mobile: 105px;
+
+$height-footer-desktop: 102px;
+$height-footer-mobile: 274.1px;
+
+$checkbox-size: 20px;
+/**
+* Transitions and Animations
+*/
+$transition-duration: 300ms;
+$transition-duration-fast: 100ms;
+$transition-finction: ease-in-out;
+
+
+/**
+* Radius
+*/
+$border-radius-small: 2px;
+$border-radius-medium: 5px;
+$border-radius-large: 8px;
+$border-radius-circle: 50%;
+
+
+/**
+* Box-shadows
+*/
+$box-shadow: 0px rem(3px) rem(10px) rgba($black, .05);
+
+$box-shadow-double: 0px rem(12px) rem(40px) rgba($black, .03),
+                    0px 0px rem(10px) rgba($silver-chalice, .03);
+
+$box-shadow-cards: rem(-3px) 0px rem(40px) rgba($black, .01),
+                    0px 0px rem(10px) rgba($silver-chalice, .03);
+
+
+/**
+* Z-indexes
+*/
+$z-index-nav: 55;
+$z-index-header: 50;
+$z-index-substrate: 20;
+$z-index-aside-block: 30;
+
+

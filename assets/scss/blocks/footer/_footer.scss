@@ -1,0 +1,100 @@
+.footer {
+    background-color: $white;
+
+    box-shadow: $box-shadow;
+    
+    &__row {
+        @media #{$screen-tablet} {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    }
+
+    &__column {
+        padding: rem(20px) 0;
+        @media #{$screen-tablet} {
+            padding: rem(31px) 0;
+        }
+
+        &--social {
+            position: relative;
+
+            &::after {
+                content: "";
+
+                position: absolute;
+                bottom: rem(2px);
+                right: 0;
+
+                width: 100%;
+                height: rem(1px);
+                
+                background: $athens-gray;
+
+                @media #{$screen-tablet} {
+                    display: none;
+                }
+
+                @media #{$screen-desktop} {
+                    display: block;
+                    top: rem(31px);
+                    bottom: 0;
+                    
+                    width: rem(1px);
+                    height: rem(40px);
+
+                    background: $heather;
+                }
+            }
+
+            @media #{$screen-desktop} {
+                padding-right: rem(40px);
+            }
+        }
+
+        &--menu {
+            position: relative;
+            
+            &::after {
+                content: "";
+
+                position: absolute;
+                bottom: rem(-4px);
+                right: 0;
+
+                width: 100%;
+                height: rem(1px);
+
+                background: $athens-gray;
+
+                @media #{$screen-tablet} {
+                    display: none;
+                }
+            }
+
+            @media #{$screen-tablet} {
+                margin-right: auto;
+                margin-left: rem(40px);
+            }
+        }
+
+        &--logo {
+            // padding: rem(0px) 0 rem(0px) 0;
+            width: rem(100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__menu-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media #{$screen-tablet} {
+            flex-direction: row;
+        }
+    }
+}

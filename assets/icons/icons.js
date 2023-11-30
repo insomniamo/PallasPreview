@@ -1,0 +1,22 @@
+// Пример подключения иконки
+import './svg/arrow.svg';
+import './svg/breadcrumbs.svg';
+import './svg/burger-menu.svg';
+import './svg/comments.svg';
+import './svg/cross.svg';
+import './svg/exclamation-mark.svg';
+import './svg/info.svg';
+import './svg/instagram.svg';
+import './svg/like.svg';
+import './svg/profile.svg';
+import './svg/question-mark.svg';
+import './svg/search.svg';
+import './svg/star-filled.svg';
+import './svg/star.svg';
+import './svg/tick.svg';
+import './svg/views.svg';
+import './svg/youtube.svg';
+import './svg/tick-checked.svg';
+import './svg/close.svg';
+import './svg/arrow-up.svg';
+import './svg/pallas-logo.svg';

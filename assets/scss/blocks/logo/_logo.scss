@@ -1,0 +1,30 @@
+.logo {
+    &__link {
+        display: flex;
+
+        height: 100%;
+
+        &--footer {
+            color: $heather;
+
+            &:hover,
+            &:focus,
+            &:active {
+                color: $slate-gray;
+            }
+        }
+    }
+
+    &__pic {
+        
+        &--footer {          
+            height: rem(60px);
+            
+
+            @media #{$screen-desktop} {
+                width: auto;
+                height: rem(60px);
+            }
+        }
+    }
+}

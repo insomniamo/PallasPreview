@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+</head>
+
+<body class="page">
+    <header class="page__header header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__column header__column--logo">
+                    <div class="column__logo header__column--logo">
+                        <a href="index.html" class="logo__link">
+                            <img class="logo__pic pic" src="public/images/pallas-cat.png"alt="Логотип">
+                        </a>
+                    </div>
+                </div>
+      
+                <div class="header__column header__column--search">
+                    <form class="search" action="#" method="get">
+                        <label class="search__label" for="search">Поиск</label>
+                        <input class="search__input input input--search" type="search" id="search"
+                            placeholder="Найти...">
+                        <button class="search__button button button--icon button--iconed-gray" type="button">
+                            <svg class="button__icon button__iconed--gray icon icon--button-gray">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="header__column header__column header__column--profile header__column--devider">
+                    <div class="header__profile profile">
+                        <a class="profile__link" href="profile-page.html">
+                            <div class="profile__bar">
+                                <span class="profile__name">Сергей</span>
+                                <div class="profile__avatar">
+                                    <img class="profile__avatar-pic" src="public/images/pallas-avatar.png" alt="Аватар">
+                                    <svg class="profile__icon-pic icon">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-profile"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__container page__container--detailed-page container container--grid">
+        <nav class="page__nav nav" data-nav>
+            <div class="nav__container" data-nav-container>
+                <div class="nav__header">
+                    <span class="nav__menu">Меню раздела</span>
+                    <button class="nav__menu-button button button--simple button--icon" type="button" data-close>
+                        <svg class="icon">
+                            <use xlink:href="public/images/icons/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">Избранное</li>
+                    <li class="nav__item">Мои новости</li>
+                    <li class="nav__item">Моё развитие</li>
+                    <li class="nav__item">Новости о манулах</li>
+                    <li class="nav__item">Факты о манулах</li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="page__menu-button menu-button">
+            <button class="menu-button__button button button--simple button--simple-icon" type="button" data-open>
+                <svg class="button__icon button__icon--simple icon">
+                    <use xlink:href="public/images/icons/sprite.svg#icon-burger-menu"></use>
+                </svg>
+                <span>Меню раздела</span>
+            </button>
+        </div>
+
+        <nav class="page__breadcrumbs breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Это'</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Просто</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Хлебные</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--active">
+                    <a class="breadcrumbs__link">Крошки</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="page__main-content">
+            <h1>Манул Тимофей из Московского зоопарка зажировался к зиме.</h1>
+
+            <section class="page__news news">
+                <time class="news__datetime" datetime="2023-11-21">21 ноября 2023</time>
+                <h2>Вот сколько теперь он весит</h2>
+                <div class="news__block">
+                    <p>
+                        Манул Тимофей из Московского зоопарка уже подготовился к наступлению холодов. Он «зажировался», пояснили в телеграм-канале зоосада.
+                    </p>
+                    
+                    <blockquote>
+                        «Наш неспешный охотник набрал вес (больше 6 кг) и отрастил мех. Он готов к зиме», — рассказали в учреждении.
+                    </blockquote>
+                    <p>
+                        В Московском зоопарке также поделились видео, на котором запечатлен герой публикации. 
+                        Тимофей вальяжно передвигается и осматривается. 
+                        Судя по кадрам, у хищника действительно округлились бока. И все же зверь ловок — ролик заканчивается сценой, в которой проворный манул, кажется, «поймал» добычу.
+                    </p>
+                    <p>
+                        Как уточняется на сайте зоосада, в октябре—ноябре у манулов отменный аппетит — они едят в полтора раза больше обычного. Их вес быстро растет. 
+                        А вот зимой манулы иногда едят через день.
+                    </p>
+                    <p>
+                        Представители вида по размерам ненамного больше домашней кошки. 
+                        В длину они достигают 50–65 см, плюс хвост 21–31 см. 
+                        Весят 2500–4500 г, говорится в описании вида на сайте зоопарка.
+                    </p>
+                    <p>
+                        11 июня Тимофей отметил день рождения — ему исполнилось три года. 
+                        В зоосаде в этот день знаменитого манула угощали «праздничной» крысой.
+                    </p>
+                <div class="news__illustration">
+                    <picture>
+                        <img src="public/images/pallas6.jpg" alt="Иллюстрация.">
+                    </picture>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="page__footer footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__column footer__column--social">
+                    <div class="footer__social social">
+                        <ul class="social__list">
+                            <li class="social__list-item">
+                                <a class="social__icon" href="#">
+                                    <svg class="social__icon-pic icon ">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__list-item">
+                                <a class="social__icon" href="#">
+                                    <svg class="social__icon-pic icon ">
+                                        <use xlink:href="public/images/icons/sprite.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column footer__column--menu">
+                    <div class="footer__menu menu">
+                        <ul class="footer__menu-list menu-list">
+                            <li class="menu-list__item">
+                                <a href="#">Правила</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#">Документы</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#">Политика конфиденциальности</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__column footer__column--logo">
+                    <div class="footer__logo logo">
+                        <a class="logo__link logo__link--footer" href="index.html">
+                            <svg class="logo__pic logo__pic--footer">
+                                <use xlink:href="public/images/icons/sprite.svg#icon-pallas-logo"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/public/js/script.js" type="module"></script>
+</body>
+
+</html>

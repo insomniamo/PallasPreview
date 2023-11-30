@@ -1,0 +1,52 @@
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: $white;
+
+    box-shadow: $box-shadow-double;
+
+    border-radius: rem($border-radius-medium);
+    
+    &__content-box {
+        padding: rem(16px) rem(16px) 0 rem(16px);
+    }
+
+    &__title-box {
+        margin-bottom: rem(10px);
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: rem($font-size-small);
+        line-height: 150%;
+        font-weight: rem($font-weight-medium);
+    }
+
+    &__description {
+        font-size: rem($font-size-tiny);
+        line-height: 120%;
+        letter-spacing: rem($letter-spacing-small);
+    }
+
+    &__buttons-box {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__button {
+        align-self: flex-end;
+
+        &+& {
+            margin-left: rem(15px);
+        }
+    }
+
+    &__icon {
+        height: rem(24px);
+        width: rem(24px);
+    }
+}

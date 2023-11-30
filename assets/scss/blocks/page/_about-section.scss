@@ -1,0 +1,37 @@
+.about-section {
+    &__main-heading {
+        @include visually-hidden;
+    }
+
+    &__heading {
+        letter-spacing: rem($letter-spacing-medium);
+
+        margin-bottom: rem(10px);
+    }
+
+    &__description {
+        font-size: $font-size-tiny;
+        line-height: 165%;
+        letter-spacing: rem($letter-spacing-small);
+
+        @media #{$screen-tablet} {
+            margin-right: rem(128px);
+        }
+
+        @media #{$screen-desktop} {
+            margin-right: rem(619px);
+        }
+
+        &+& {
+            margin-top: rem(11px);
+        }
+    }
+
+    &__button {
+        margin-top: rem(10px);
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+    }
+}

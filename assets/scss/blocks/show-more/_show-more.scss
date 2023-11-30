@@ -1,0 +1,26 @@
+.show-more {
+    &__hidden {
+        display: none;
+    }
+
+    &__toggle--active & {
+        &__icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__toggle-label {
+        margin-right: rem(8px);
+    }
+
+    &__icon {
+        display: flex;
+
+        color: #d82f49;
+
+        transition: $transition-duration $transition-finction;
+
+        height: rem(12px);
+        width: rem(12px);
+    }
+}

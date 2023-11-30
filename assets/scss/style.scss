@@ -1,0 +1,72 @@
+/**
+* Vendors
+*/
+// Пример подключения плагинов
+// @import "~plugin-name.scss";
+
+
+/**
+* Abstracts
+*/
+@import "abstracts/functions";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+
+
+/**
+* Base
+*/
+@import "base/fonts";
+@import "base/generic";
+@import "~normalize.css";
+@import '~swiper/css/swiper.min.css';
+
+
+
+/*
+* Components
+*/
+//  Пример подключения стилей блоков
+// @import "components/my-block";
+@import "blocks/testClass.scss";
+@import "blocks/footer/footer";
+@import "blocks/header/header";
+@import "blocks/content/content";
+@import "blocks/container/container";
+@import "blocks/page/page";
+@import "blocks/block/block";
+@import "blocks/heading/heading";
+@import "blocks/icons/icon";
+@import "blocks/icons/icons";
+@import "blocks/buttons/button";
+@import "blocks/buttons/buttons";
+@import "blocks/fields/fields";
+@import "blocks/input/input";
+@import "blocks/label/label";
+@import "blocks/search/search";
+@import "blocks/checkbox/checkbox";
+@import "blocks/radio/radio";
+@import "blocks/nav/nav";
+@import "blocks/profile/profile";
+@import "blocks/menu/menu-list";
+@import "blocks/logo/logo";
+@import "blocks/social/social";
+@import "blocks/breadcrumbs/breadcrumbs";
+@import "blocks/cards/card";
+@import "blocks/cards/cards";
+@import "blocks/cards/info-box";
+@import "blocks/cards/heading";
+@import "blocks/tabs/tabs";
+@import "blocks/cards/cards-mini";
+@import "blocks/cards/mini-card";
+@import "blocks/news/news";
+@import "blocks/menu/menu-button";
+@import "blocks/page/article-section";
+@import "blocks/page/profile-form";
+@import "blocks/page/form";
+@import "blocks/slider/slider";
+@import "blocks/cards/notification";
+@import "blocks/show-more/show-more";
+@import "blocks/page/about-section";
+@import "blocks/cards/tippy-box";

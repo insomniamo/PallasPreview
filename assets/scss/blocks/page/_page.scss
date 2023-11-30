@@ -1,0 +1,215 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    &__header {
+        position: fixed;
+        z-index: $z-index-header;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-shrink: 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        margin-top: rem($height-header-mobile);
+        padding-top: rem(40px);
+        padding-bottom: rem(100px);
+
+        @media #{$screen-tablet} {
+            margin-top: rem($height-header-desktop);
+            padding-top: rem(50px);
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        margin-top: rem($height-header-mobile);
+        padding-top: 0;
+        padding-bottom: rem(100px);
+
+        @media #{$screen-tablet} {
+            display: grid;
+            margin-top: rem($height-header-desktop);
+        }
+
+        @media #{$screen-desktop} {
+            padding-top: rem(50px);
+        }
+
+        &--detailed-page {
+            padding-bottom: rem(38px);
+
+            @media #{$screen-tablet} {
+                padding-bottom: rem(100px);
+            }
+
+            @media #{$screen-desktop} {
+                padding-bottom: rem(126px);
+            }
+        }
+
+        &--profile-page {
+            padding-bottom: rem(70px);
+
+            @media #{$screen-tablet} {
+                padding-bottom: rem(100px);
+            }
+        }
+
+        &--faq {
+            padding-bottom: rem(100px);
+
+            @media #{$screen-tablet} {
+                padding-bottom: rem(130px);
+            }
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        @media #{$screen-desktop} {
+            display: block;
+            grid-row: 1 / -1;
+        }
+
+        &--active {
+            display: block;
+
+            width: 100vw;
+            height: 100vh;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: $z-index-nav;
+        }
+    }
+
+    &__menu-button {
+        position: absolute;
+        right: 0;
+        left: 0;
+
+        height: rem(50px);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media #{$screen-desktop} {
+            display: none;
+        }
+    }
+
+    &__breadcrumbs {
+        margin-bottom: rem(10px);
+        margin-top: rem(80px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(15px);
+        }
+
+        @media #{$screen-desktop} {
+            margin-top: 0;
+        }
+
+        &--faq {
+            @media #{$screen-tablet} {
+                margin-bottom: rem(7px);
+                margin-top: rem(74px);
+            }
+
+            @media #{$screen-desktop} {
+                margin-top: 0;
+                margin-bottom: rem(15px);
+            }
+        }
+    }
+
+    &__main-heading {
+        margin-bottom: rem(30px);
+
+        @media #{$screen-desktop} {
+            margin-bottom: rem(40px);
+        }
+
+        &--main {
+            margin-bottom: rem(20px);
+        }
+
+        &--faq {
+            margin-bottom: rem(69px);
+
+            @media #{$screen-tablet} {
+                margin-bottom: rem(45px);
+            }
+
+            @media #{$screen-desktop} {
+                margin-bottom: rem(40px);
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: rem(40px);
+
+        @media #{$screen-tablet} {
+            margin-bottom: rem(50px);
+        }
+
+        @media #{$screen-desktop} {
+            margin-bottom: rem(61px);
+        }
+    }
+
+    &__about {
+        margin-bottom: rem(18px);
+
+        @media #{$screen-desktop} {
+            margin-bottom: rem(40px);
+        }
+        @media #{$screen-tablet} {
+            margin-bottom: rem(40px);
+        }
+    }
+
+    &__news {
+        padding: rem(30px) rem(20px);
+
+        @media #{$screen-tablet} {
+            padding: rem(50px) rem(40px);
+        }
+
+        @media #{$screen-desktop} {
+            padding: rem(60px) rem(110px) rem(50px) rem(110px);
+        }
+    }
+
+    &__profile-form {
+        padding: rem(50px) rem(20px) rem(35px) rem(20px);
+
+        @media #{$screen-tablet} {
+            padding: rem(50px) rem(40px) rem(35px) rem(40px);
+        }
+
+        @media #{$screen-desktop} {
+            padding: rem(60px) rem(110px) rem(35px) rem(110px);
+        }
+    }
+
+    &__footer {
+        flex-shrink: 0;
+    }
+}

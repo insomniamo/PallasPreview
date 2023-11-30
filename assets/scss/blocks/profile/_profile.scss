@@ -1,0 +1,83 @@
+.profile {
+    margin-top: 0;
+    @media #{$screen-tablet} {
+        margin-top: rem(20px);
+        margin-left: rem(15px);
+        height: rem(40px);
+        width: rem(130px);
+    }
+
+    &__bar {
+        @media #{$screen-tablet} {
+            position: relative;
+  
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+  
+            margin-right: 0;
+  
+            height: rem(40px);
+            width: rem(130px);
+        }
+    }
+  
+    &__name {
+        display: none;
+  
+        @media #{$screen-tablet} {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-right: rem(10px);
+        }
+    }
+  
+    &__link {
+        display: inline-block;
+  
+        font-size: rem($font-size-tiny);
+        line-height: rem(17px);
+        letter-spacing: $letter-spacing-small;
+  
+        @media #{$screen-tablet} {
+            color: $slate-gray;
+  
+            &:hover,
+            &:focus,
+            &:active {
+                text-decoration: none;
+            }
+  
+            &:hover {
+                color: $bunker;
+            }
+  
+            &:focus,
+            &:active {
+                color: $slate-gray;
+            }
+        }
+    }
+  
+    &__avatar-pic {
+        display: none;
+        @media #{$screen-tablet} {
+            display: block;
+            height: rem(40px);
+            width: rem(40px);
+            border-radius: $border-radius-circle;
+        }
+    }
+  
+    &__icon-pic {
+        display: block;
+        height: rem(24px);
+        width: rem(24px);
+        
+        @media #{$screen-tablet} {
+            display: none;
+        }
+    }
+  }

@@ -1,0 +1,225 @@
+.button {
+    display: inline-block;
+    position: relative;
+
+    font-weight: $font-weight-medium;
+    font-size: rem($font-size-tiny);
+    line-height: rem(16px);
+    text-decoration: none;
+
+    &--filled {
+        padding: rem(10px) rem(30px);
+
+        color: $white;
+        background-color: $button-normal;
+
+        border-radius: rem($border-radius-medium);
+
+        &:hover {
+            text-decoration: none;
+
+            color: $white;
+            background-color: $button-hover;
+        }
+
+        &:focus,
+        &:active {
+            text-decoration: none;
+
+            color: $white;
+            background-color: $button-active;
+        }
+
+        &:disabled {
+            color: $heather;
+            background-color: $button-disabled;
+        }
+    }
+
+    &--huge {
+        padding: rem(17px) rem(30px);
+    }
+
+    &--rounded {
+        padding: rem(6px) rem(30px);
+
+        border-radius: 0;
+        border-top-left-radius: rem($border-radius-medium);
+        border-bottom-right-radius: rem($border-radius-medium);
+    }
+
+    &__icon {
+        margin: 0;
+        width: rem(24px);
+        height: rem(24px);
+    }
+
+    &__icon--filled {
+        margin-left: rem(5px);
+        width: rem(12px);
+        height: rem(12px);
+        display: inline-block;
+    }
+
+    &--simple {
+        padding: rem(6px) 0;
+
+        background-color: transparent;
+        color: $button-normal;
+
+        &:hover {
+            color: $button-hover;
+        }
+
+        &:focus,
+        &:active {
+            color: $button-active;
+        }
+
+        &:disabled {
+            color: $heather;
+        }
+    }
+
+    &--simple-icon {
+        display: flex;
+        align-items: center;
+
+        font-weight: 600;
+    }
+
+    &__icon--simple {
+        margin-right: rem(10px);
+    }
+
+    &--switcher {
+        padding: 0;
+        padding-bottom: rem(15px);
+
+        font-size: rem($font-size-small);
+        line-height: rem(21px);
+
+        color: $heather;
+    }
+
+    &--switcher-active {
+        color: inherit;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            width: 100%;
+            height: rem(4px);
+
+            background-color: $cerise-red;
+            border-top-left-radius: rem(4px);
+            border-top-right-radius: rem(4px);
+        }
+    }
+
+    &--icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: rem(24px);
+        height: rem(24px);
+
+        padding: 0;
+
+        background-color: transparent;
+    }
+
+    &--iconed-gray {
+        color: $slate-gray;
+    }
+
+    &--iconed-blue {
+        color: $curious-blue;
+    }
+
+    &--iconed-with {
+        width: rem(35px);
+        height: rem(35px);
+
+        color: $curious-blue;
+    }
+
+    &--iconed-with-white {
+        color: $white;
+    }
+
+    &--iconed-with-filled {
+        background-color: $white;
+
+        border-radius: 0;
+        border-top-right-radius: rem($border-radius-medium);
+        border-bottom-left-radius: rem($border-radius-medium);
+
+        @media #{$screen-tablet} {
+            border-top-right-radius: rem($border-radius-large);
+            border-bottom-left-radius: rem($border-radius-large);
+        }
+
+        &:hover {
+            background-color: $white;
+        }
+
+        &:focus,
+        &:active {
+            background-color: $white;
+        }
+
+        &:disabled {
+            background-color: $white;
+        }
+    }
+
+    &--icon-circle {
+        width: rem(24px);
+        height: rem(24px);
+
+        background-color: $white;
+
+        border-radius: $border-radius-circle;
+    }
+
+    &--show-more {
+        font-weight: $font-weight-medium ;
+        font-size: $font-size-small;
+        line-height: rem(16px);
+        letter-spacing: rem(0.24px);
+
+        color: #69676d;
+        background-color: transparent;
+    }
+
+    &--simple-divider {
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: 35%;
+            right: rem(-5px);
+
+            width: rem(1px);
+            height: rem(12px);
+
+            background-color: $heather;
+        }
+    }
+
+    &--show-more {
+        font-weight: $font-weight-regular;
+        font-size: $font-size-miniature;
+        line-height: rem(16px);
+        letter-spacing: rem(0.24px);
+
+        color: #69676d;
+        background-color: transparent;
+    }
+}

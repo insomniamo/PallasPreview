@@ -1,0 +1,129 @@
+.slider {
+    &__box {
+        position: relative;
+    }
+
+    .swiper {
+        &-slide {
+            width: auto;
+            opacity: .5;
+
+            &-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    &--notifications {
+        .swiper {
+
+            &-container {
+                @media #{$screen-desktop} {
+                    min-height: 180px;
+                }
+            }
+
+            &-slide {
+                opacity: 1;
+            }
+
+            &-pagination-bullets {
+                bottom: rem(-3px);
+            }
+
+            &-pagination-bullet {
+                height: rem(9px);
+                width: rem(9px);
+
+                background-color: $athens-gray;
+                opacity: 1;
+
+                &-active {
+                    background-color: $tapestry;
+                }
+            }
+        }
+    }
+
+    &__pagination {
+        display: none;
+
+        @media #{$screen-desktop} {
+            display: block;
+        }
+    }
+
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100%;
+        max-width: rem($width-container + 2 * $gap-container);
+        height: 0;
+        margin: 0 auto 0;
+        padding-left: rem($gap-container);
+        padding-right: rem($gap-container);
+
+        @media #{$screen-tablet} {
+            display: block;
+        }
+
+        &-item {
+            width: auto;
+            height: auto;
+
+            &::after {
+                content: "";
+            }
+        }
+    }
+
+    &__button {
+        width: rem(36px);
+        height: rem(36px);
+
+        border-color: $white;
+        background-color: $white;
+        box-shadow: 0 rem(4px) rem(12px) rgba(38, 94, 107, 0.25);
+
+        border-radius: $border-radius-circle;
+
+        @media #{$screen-desktop} {
+            width: rem(49px);
+            height: rem(49px);
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $golden-grass;
+            background-color: $golden-grass;
+        }
+
+        &--prev & {
+            &-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-icon {
+            width: rem(26px);
+            height: rem(26px);
+
+            color: rgba($tiber, .8);
+
+            @media #{$screen-desktop} {
+                width: rem(36px);
+                height: rem(36px);
+            }
+
+            &:hover,
+            &:focus {
+                color: $white;
+            }
+        }
+    }
+}

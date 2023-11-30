@@ -1,0 +1,90 @@
+@mixin object-fit($fit: fill, $position: null) {
+    -o-object-fit: $fit;
+    object-fit: $fit;
+
+    @if $position {
+        font-family: "object-fit: #{$fit}; object-position: #{$position}";
+
+        -o-object-position: $position;
+        object-position: $position;
+    } @else {
+        font-family: "object-fit: #{$fit}";
+    }
+}
+
+
+// TITLE
+@mixin title-huge {
+    margin: 0;
+
+    font-weight: $font-weight-medium;
+    font-size: rem($title-size-big);
+    line-height: rem($title-height-big);
+
+    @media #{$screen-tablet} {
+        font-size: rem($title-size-big-desktop);
+        line-height: rem($title-height-big-desktop);
+    }
+
+    &:not([class]) {
+        margin-bottom: rem(30px);
+    }
+}
+
+@mixin title-medium {
+    margin: 0;
+
+    font-weight: $font-weight-medium;
+    font-size: rem($title-size-medium);
+    line-height: rem($title-height-medium);
+
+    @media #{$screen-tablet} {
+        font-size: rem($title-size-medium-desktop);
+        line-height: rem($title-height-medium-desktop);
+    }
+
+    &:not([class]) {
+        margin-bottom: rem(20px);
+    }
+}
+
+@mixin title-small {
+    margin: 0;
+
+    font-weight: $font-weight-medium;
+    font-size: rem($title-size-small);
+    line-height: rem($title-height-small);
+
+    @media #{$screen-tablet} {
+        font-size: rem($title-size-small-desktop);
+        line-height: rem($title-height-small-desktop);
+    }
+
+    &:not([class]) {
+        margin-bottom: rem(20px);
+    }
+}
+
+@mixin list {
+    padding: 0;
+    margin: 0;
+
+    font-size: rem($font-size-tiny);
+    line-height: rem(16px);
+
+    @media #{$screen-tablet} {
+        font-size: rem($font-size-small);
+        line-height: 117%;
+    }
+}
+
+@mixin visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

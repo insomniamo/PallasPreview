@@ -1,0 +1,25 @@
+.cards-mini {
+    overflow: hidden;
+
+    position: relative;
+
+    min-height: rem(150px);
+
+    &__list {
+        position: absolute;
+        display: flex;
+    }
+
+    &__item {
+        width: rem(286px);
+        height: rem(150px);
+
+        &:not(:last-child) {
+            margin-right: rem(32px);
+        }
+    }
+
+    &__card {
+        height: 100%;
+    }
+}
