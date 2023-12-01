@@ -1,4 +1,4 @@
-# https://insomniamo.github.io/PallasPreview/index.html
+# https://insomniamo.github.io/PallasPreview/
 
 Проект выполнен с помощью компонентного подхода (БЭМ).
 
